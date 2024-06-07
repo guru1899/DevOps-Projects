@@ -1,0 +1,42 @@
+---
+- name: Install script to Kubernetes Cluster machines
+  hosts: Production
+  become: yes
+
+  tasks:
+    - name: Copy script to remote host
+      copy:
+        src: /home/ubuntu/script/Production-Server.sh
+        dest: /home/ubuntu/Production-Server.sh
+        mode: 0755
+
+    - name: Run the script
+      command: bash /home/ubuntu/Production-Server.sh
+
+- name: Install script to Testing Server
+  hosts: Testing
+  become: yes
+
+  tasks:
+    - name: Copy script to Testing Server
+      copy:
+        src: /home/ubuntu/script/Testing-Server.sh
+        dest: /home/ubuntu/Testing-Server.sh
+        mode: 0755
+
+    - name: Run the script
+      command: bash  /home/ubuntu/Testing-Server.sh
+
+- name: Install script to Jenkins Server
+  hosts: Jenkins
+  become: yes
+
+  tasks:
+    - name: Copy script to Jenkins Server
+      copy:
+        src: /home/ubuntu/script/Jenkins-Master.sh
+        dest: /home/ubuntu/Jenkins-Master.sh
+        mode: 0755
+
+    - name: Run the script
+      command: bash  /home/ubuntu/Jenkins-Master.sh

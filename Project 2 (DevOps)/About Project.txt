@@ -1,0 +1,32 @@
+### Project Title
+**Automated CI/CD Pipeline Implementation for Containerized Web Application**
+
+### Project Description
+Designed and implemented a robust CI/CD pipeline using Jenkins, Docker, and AWS CodeBuild to streamline the development, testing, and deployment process for a web application. The key features and responsibilities involved in this project include:
+
+1. **Configuration Management:**
+   - Leveraged a configuration management tool to automate the installation of necessary software on the target machines, ensuring a consistent and reproducible environment.
+
+2. **Version Control Integration:**
+   - Implemented a Git workflow to manage the source code, facilitating collaborative development and efficient code management.
+   - Established branching strategies for the master and develop branches to separate production and development environments.
+
+3. **Automated Build and Test:**
+   - Configured AWS CodeBuild to automatically trigger builds upon commits to the master or develop branches.
+   - Developed conditional workflows where commits to the master branch trigger both testing and deployment to production, while commits to the develop branch trigger only testing.
+
+4. **Containerization:**
+   - Created a Dockerfile to containerize the web application, ensuring the application runs consistently across different environments.
+   - Automated the Docker image build process to initiate upon each push to the GitHub repository.
+
+5. **Jenkins Pipeline:**
+   - Designed and implemented a Jenkins pipeline with three distinct jobs:
+     - **Job1: Build** - Compiles the source code and creates a Docker image.
+     - **Job2: Test** - Executes automated tests to validate the application's functionality.
+     - **Job3: Prod** - Deploys the tested Docker image to the production environment if the build is triggered from the master branch.
+
+6. **Deployment and Hosting:**
+   - Utilized the pre-built Docker container `hshar/webapp` as the base image, with the application code residing in `/var/www/html`.
+   - Ensured seamless integration between Jenkins, GitHub, Docker, and AWS services to create an efficient and reliable CI/CD pipeline.
+
+This project demonstrates expertise in automating software delivery processes, containerization, and deploying scalable web applications, significantly improving development productivity and deployment reliability.

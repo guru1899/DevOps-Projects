@@ -1,0 +1,14 @@
+**Project Title:**
+Deploying a Mufti-Tier Website Using AWS EC2 
+
+**Project Description:**
+Successfully migrated Company ABC's product infrastructure to Amazon Web Services (AWS) to enhance scalability, availability, and performance. The project involved:
+
+- **Database Migration:** Transitioned the existing MySQL database to Amazon RDS (Relational Database Service) to ensure managed, scalable, and highly available database operations.
+- **Web Application Deployment:** Deployed the PHP-based website on Amazon EC2 instances to leverage the flexible compute capacity of the AWS cloud.
+- **High Availability Setup:** Implemented a multi-AZ (Availability Zone) architecture for the web and database servers to ensure redundancy and minimize downtime.
+- **Auto Scaling Configuration:** Enabled Auto Scaling for the EC2 instances hosting the website, allowing dynamic scaling of resources based on traffic demands to maintain optimal performance during spikes and reduce costs during low traffic periods.
+- **Security and Networking:** Configured security groups, VPC (Virtual Private Cloud), and subnets to ensure a secure and isolated network environment.
+- **Monitoring and Alerts:** Set up AWS CloudWatch to monitor system performance and configured alarms for proactive issue resolution.
+
+This project ensured a robust, scalable, and highly available infrastructure, enabling Company ABC to handle increased traffic and provide a seamless user experience.

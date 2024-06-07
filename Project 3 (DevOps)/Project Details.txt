@@ -1,0 +1,41 @@
+### Project Title
+**Automated Deployment and Scaling of Containerized Applications with Kubernetes and Jenkins**
+
+### Project Description
+Implemented an automated DevOps lifecycle to support the increasing demand for a monolithic product application at Analytics Pvt Ltd. The lifecycle involved automating deployment, scaling, and operations of application containers across clusters of hosts without altering the Docker containers in the testing environment. Key responsibilities included:
+
+1. **Version Control and Git Workflow:**
+   - Established a Git workflow to manage source code with a release schedule on the 25th of every month.
+   - Integrated AWS CodeBuild to automatically trigger builds on commits to the master branch.
+
+2. **Containerization:**
+   - Created a custom Docker image using a Dockerfile.
+   - Configured the Docker build process to initiate on each push to the GitHub repository.
+
+3. **Kubernetes Deployment:**
+   - Deployed the containerized code from Docker Hub to a Kubernetes cluster.
+   - Configured the deployment with 2 replicas for high availability and scalability.
+   - Set up a NodePort service on port 30008 to expose the application.
+
+4. **Jenkins Pipeline:**
+   - Developed a Jenkins Pipeline script to automate the build, test, and deployment process.
+   - The pipeline included stages for code checkout, Docker image build, and Kubernetes deployment.
+
+5. **Configuration Management:**
+   - Automated the installation of necessary software and configurations on different worker machines using a configuration management tool (e.g., Ansible, Chef, Puppet).
+   - Ensured Jenkins, Java, Docker, and Kubernetes were correctly installed and configured on the respective worker nodes.
+
+6. **Infrastructure as Code with Terraform:**
+   - Utilized Terraform to provision and manage infrastructure on AWS.
+   - Automated the creation of EC2 instances, VPCs, subnets, security groups, and other required resources.
+
+### Tools and Technologies Used:
+- **Version Control:** Git, GitHub
+- **CI/CD:** Jenkins, AWS CodeBuild
+- **Containerization:** Docker, Docker Hub
+- **Container Orchestration:** Kubernetes
+- **Configuration Management:** Ansible/Chef/Puppet
+- **Infrastructure as Code:** Terraform
+- **Cloud Provider:** AWS
+
+This project demonstrates proficiency in modern DevOps practices, including containerization, continuous integration, continuous deployment, infrastructure as code, and configuration management. It showcases the ability to automate and scale application deployment efficiently in response to increasing demand.

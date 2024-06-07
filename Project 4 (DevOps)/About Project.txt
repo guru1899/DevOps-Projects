@@ -1,0 +1,38 @@
+### Project Title
+**Automated Deployment and Testing of Containerized Applications using Kubernetes, Jenkins, and Terraform**
+
+### Project Description
+As a DevOps Engineer at Zendrix Corporation, led the automation and modernization of the application deployment process to enhance efficiency, reliability, and scalability. The key initiatives and responsibilities undertaken in this project included:
+
+1. **Dockerization:**
+   - Dockerized the production application by creating a Dockerfile and building a custom Docker image.
+   - Ensured the application was properly containerized to maintain consistency across different environments.
+
+2. **Kubernetes Deployment:**
+   - Deployed the Dockerized application on a Kubernetes cluster to facilitate efficient orchestration and scaling.
+   - Configured the application to run as a Kubernetes deployment with appropriate replicas for high availability.
+
+3. **Continuous Integration/Continuous Deployment (CI/CD) with Jenkins:**
+   - Created a Jenkins freestyle pipeline to automatically trigger the deployment process upon detecting changes in the GitHub repository.
+   - Configured Jenkins to test the application on port 85, ensuring it passes the test before deployment.
+   - Developed a secondary Jenkins pipeline to deploy the application on Kubernetes using the custom Docker image from Docker Hub.
+   - Exposed the application as a NodePort service to ensure accessibility.
+
+4. **Infrastructure as Code with Terraform:**
+   - Automated the provisioning of infrastructure on AWS using Terraform.
+   - Created necessary resources including EC2 instances, VPCs, subnets, and security groups to support the Kubernetes cluster and the application deployment.
+
+5. **Configuration Management with Ansible:**
+   - Used Ansible to automate the installation of Java on the required machines.
+   - Ensured consistent configuration and setup across all nodes involved in the deployment process.
+
+### Tools and Technologies Used:
+- **Version Control:** Git, GitHub
+- **CI/CD:** Jenkins
+- **Containerization:** Docker, Docker Hub
+- **Container Orchestration:** Kubernetes
+- **Configuration Management:** Ansible
+- **Infrastructure as Code:** Terraform
+- **Cloud Provider:** AWS
+
+This project highlights expertise in implementing automated deployment pipelines, leveraging containerization and orchestration technologies, and utilizing infrastructure as code and configuration management tools to ensure a reliable, scalable, and efficient deployment process.
